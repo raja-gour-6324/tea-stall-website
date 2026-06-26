@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gupta Tea Stall</title>
+
+<style>
+    .profile-img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffaf3;
+    color:#333;
+}
+
+nav{
+    background:#3e2723;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:700px;
+}
+
+.btn{
+    margin-top:25px;
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:#4e342e;
+    font-size:38px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#6d4c41;
+    margin-bottom:10px;
+}
+
+.offer{
+    background:#ff9800;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.offer h2{
+    font-size:42px;
+}
+
+.review-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact{
+    background:#3e2723;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+footer{
+    background:#2b1b18;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+#menu,
+#reviews,
+#contact{
+    scroll-margin-top:80px;
+}
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .offer h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">☕ Gupta Tea Stall</div>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+<img src="images/tea.jpg" class="profile-img">
+   
+style="
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+">
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);">
+
+    <h1>☕ Gupta Tea Stall</h1>
+
+    <p>
+        Har Sip Mein Swad • Har Cup Mein Tazgi
+        <br><br>
+        Fresh Tea | Coffee | Snacks
+    </p>
+
+    <div style="margin-top:25px;display:flex;gap:15px;flex-wrap:wrap;justify-content:center;">
+
+        <a href="tel:7764763245" class="btn">
+            📞 Call Now
+        </a>
+
+        <a href="https://wa.me/917764763245" class="btn">
+            💬 WhatsApp
+        </a>
+
+    </div>
+
+</section>
+<section id="menu" class="section">
+    <h2>Our Special Menu</h2>
+
+    <div class="cards">
+
+<div class="card">
+<h3>☕ Masala Tea</h3>
+<p>Fresh Masala Tea</p>
+<h2>₹10</h2>
+</div>
+
+<div class="card">
+<h3>☕ Ginger Tea</h3>
+<p>Adrak Special</p>
+<h2>₹15</h2>
+</div>
+
+<div class="card">
+<h3>☕ Black Tea</h3>
+<p>Healthy Choice</p>
+<h2>₹15</h2>
+</div>
+
+<div class="card">
+<h3>☕ Coffee</h3>
+<p>Hot Coffee</p>
+<h2>₹25</h2>
+</div>
+
+<div class="card">
+<h3>🥤 Cold Coffee</h3>
+<p>Cold & Creamy</p>
+<h2>₹40</h2>
+</div>
+
+<div class="card">
+<h3>🥟 Samosa</h3>
+<p>Hot & Crispy</p>
+<h2>₹15</h2>
+</div>
+
+<div class="card">
+<h3>🍪 Biscuit</h3>
+<p>Fresh Biscuits</p>
+<h2>₹5</h2>
+</div>
+
+<div class="card">
+<h3>🥛 Milk Tea</h3>
+<p>Rich Milk Tea</p>
+<h2>₹20</h2>
+</div>
+
+</div>
+</section>
+
+<section class="offer">
+    <h2>🔥 Special Offer 🔥</h2>
+    <p>Rozana Taza Chai Aur Coffee Available</p>
+</section>
+
+<section id="reviews" class="section">
+    <h2>Customer Reviews</h2>
+
+    <div class="cards">
+
+        <div class="review-box">
+            ⭐⭐⭐⭐⭐
+            <br><br>
+            "Bahut badhiya chai."
+        </div>
+
+        <div class="review-box">
+            ⭐⭐⭐⭐⭐
+            <br><br>
+            "Coffee ka taste zabardast hai."
+        </div>
+
+        <div class="review-box">
+            ⭐⭐⭐⭐⭐
+            <br><br>
+            "Service fast aur quality best."
+        </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>📍 Contact Us</h2>
+
+<br>
+
+<p><strong>Gupta Tea Stall</strong></p>
+
+<p>📞 xxxxxxxx78</p>
+
+<p>☕ Tea & Coffee Available All Day</p>
+
+<p>🕘 Timing : 7:00 AM - 10:00 PM</p>
+
+<br>
+
+<a href="tel:xxxxxxxx78" class="btn">
+📞 Call Now
+</a>
+<p>📍 Address: Dandahiya bazar near petrol pump, [Lucknow]</p>
+<p>🕘 Open: 7:00 AM - 10:00 PM</p>
+<p>📞 Mobile: 7764763245</p>
+<a href="https://wa.me/91xxxxxxxx78"
+class="btn">
+💬 WhatsApp
+</a>
+
+</section>
+
+<footer>
+    <h3>☕ Gupta Tea Stall</h3>
+    <p>Fresh Tea • Coffee • Snacks</p>
+    <p>📞 xxxxxxxx78</p>
+    <br>
+    <p>© 2026 Gupta Tea Stall. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/917764763245">
+WhatsApp
+</a>
+
+</body>
+</html>
